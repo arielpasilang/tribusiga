@@ -677,11 +677,12 @@ i.x4:before {
 \*------------------------------------*/
 
 header .container-fluid {
-  background-image: url("../images/hero.jpeg");
+  background-image: url("../images/20190420_055839.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   padding-top: 36px;
+  background-position: center center;
 }
 
 .hamburger {
@@ -722,6 +723,7 @@ header .container-fluid {
 .jumbotron p {
   color: #ffffff;
   margin-bottom: 5%;
+  background: rgba(0, 0, 0, 0.2) !important;
 }
 
 /*------------------------------------*\

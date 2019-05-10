@@ -58,19 +58,6 @@ class Header extends React.Component {
                 <br />
                 calling extra attention to featured content or information.
               </p>
-              <p>
-                <a className="btn btn-primary btn-lg" role="button">
-                  Learn more
-                </a>{" "}
-                <a
-                  target="_blank"
-                  href="http://www.themeinthebox.com/ourtheme/mountain-king-bootstrap-template/"
-                  className="btn btn-lg btn-danger"
-                  role="button"
-                >
-                  Download
-                </a>
-              </p>
             </div>
           </div>
         </div>
