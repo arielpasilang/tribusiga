@@ -30,7 +30,7 @@ const News = () => (
                 See Our Upcoming Major Climb <i className="fa fa-arrow-circle-o-right" />{" "}
               </Link>
             </div>
-            <div className="col-md-5">
+            <div className="col-md-5" styles={{textAlign:"center"}}>
                 <LazyLoad>
                   <img
                     src={G2}
@@ -38,6 +38,7 @@ const News = () => (
                     className="img-responsive img-fluid"
                   />
                 </LazyLoad>
+                <small>Tribu Siga successfully summitted Mt. Guiting2x, Rombom. Said to be one of the hardest mountain to climb along with Mt. Halcon in the Philippines.</small>
             </div>
           </div>
         </div>

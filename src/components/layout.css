@@ -789,12 +789,11 @@ header .container-fluid {
   background-position: center center;
 }
 
-.gallery {
-  background-color: #dddddd;
-}
-
 .prefooter .container-fluid {
   background: url("../images/contact.jpg") center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .prefooter .container-fluid h3, .prefooter .container-fluid p {
   background-color: rgba(0, 0, 0, 0.5);
@@ -836,7 +835,8 @@ header .container-fluid {
 \*------------------------------------*/
 
 footer {
-  background-color: rgba(36, 50, 59, 1);
+  background-color: #000;
+  color: white;
   padding-top: 2em;
   padding-bottom: 1.2em;
 }

@@ -12,7 +12,7 @@ import History from "../components/history"
 
 const IndexPage = () => (
   <Layout>
-      <SEO title="Tribu Siga Mountaineers" />
+      <SEO title="Home" />
       <Featured />
       <About />
       <News />
