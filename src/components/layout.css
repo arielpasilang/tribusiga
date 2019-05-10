@@ -709,6 +709,7 @@ header .container-fluid {
 }
 .jumbotron h1 {
   font-size: 65px;
+  background: rgba(0, 0, 0, 0.2) !important;
 }
 .jumbotron h1,
 .jumbotron h2,
@@ -724,6 +725,12 @@ header .container-fluid {
   color: #ffffff;
   margin-bottom: 5%;
   background: rgba(0, 0, 0, 0.2) !important;
+}
+
+@media screen and (max-width: 568px){
+  .jumbotron h1 {
+    font-size: 50px;
+  }
 }
 
 /*------------------------------------*\
@@ -751,7 +758,7 @@ header .container-fluid {
 .opaline {
   padding-top: 3em;
   padding-bottom: 3em;
-  background-color: rgba(128, 215, 247, 0.66);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .opaline h1,
@@ -776,10 +783,10 @@ header .container-fluid {
 }
 
 .story .container-fluid {
-  background-image: url("https://unsplash.it/3000/2000?image=531");
+  background-image: url("../images/sunrise.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
 }
 
 .gallery {
@@ -787,8 +794,11 @@ header .container-fluid {
 }
 
 .prefooter .container-fluid {
-  background: linear-gradient(rgba(33, 37, 43, 0.6), rgba(33, 37, 43, 0.6)),
-    url(https://unsplash.it/4000/3000?image=528);
+  background: url("../images/contact.jpg") center left;
+}
+.prefooter .container-fluid h3, .prefooter .container-fluid p {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
 }
 
 .prefooter h1,
@@ -799,6 +809,26 @@ header .container-fluid {
 .prefooter h6,
 .prefooter p {
   color: #ffffff;
+}
+.img-responsive{
+  margin-top: 20px;
+}
+@media screen and (max-width: 568px){
+  .number .container-fluid {
+    background-image: url("../images/featured-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .story .container-fluid {
+    background-image: url("../images/sunrise-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+}
+.prefooter .container-fluid {
+  background: url("../images/contact-mobile.png") center left;
+}
 }
 
 /*------------------------------------*\

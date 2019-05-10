@@ -19,12 +19,12 @@ class Header extends React.Component {
           {/* change the image in style.css to the class header .container-fluid [approximately row 50] */}
           <div className="container">
             <div className="row">
-              <div className="col-md-10 col-xs-10">
-                <a href="#" className="thumbnail logo">
+              <div className="col-md-10 col-6">
+                <Link to="/" className="thumbnail logo">
                   <img src={Logo} alt="logo" className="img-responsive" />
-                </a>
+                </Link>
               </div>
-              <div className="col-md-2 col-md-offset-8 col-xs-2 text-center">
+              <div className="col-md-2 col-6 text-center">
                 <div className="menu-btn">
                   <span className="hamburger">☰</span>
                 </div>
@@ -53,10 +53,9 @@ class Header extends React.Component {
                 </strong>
               </h1>
               <p>
-                This is a simple hero unit, a simple jumbotron-style component
-                for
+                "In every mountain we climb, we create wonderful memories, meets awesome friends and a thousand stories to tell"
                 <br />
-                calling extra attention to featured content or information.
+                Tribu Siga Mountaineers (Mt. Talinis April 12-15, 2017)
               </p>
             </div>
           </div>
