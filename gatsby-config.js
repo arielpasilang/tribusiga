@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Tribu Siga Mountaineers`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `We are Tribu Siga Mountaineers. We explore the mountains and star gazing is always the price we take. Check our upcoming climbs and events. `,
+    author: `@arielp`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
