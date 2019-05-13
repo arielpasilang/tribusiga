@@ -2,8 +2,21 @@ import { Link } from "gatsby"
 import React from "react"
 import Logo from "../images/your_logo.png"
 import SplitText from "react-pose-text"
+import Sidebar from 'react-sidebar'
+import SidebarNav from '../components/sidebar'
 
 class Header extends React.Component {
+    constructor(props) {
+    super(props);
+    this.state = {
+      sidebarOpen: false
+    };
+    this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
+  }
+ 
+  onSetSidebarOpen(open) {
+    this.setState({ sidebarOpen: open });
+  }
   render() {
     const charPoses = {
       exit: { opacity: 0, y: 20 },
@@ -26,20 +39,14 @@ class Header extends React.Component {
               </div>
               <div className="col-md-2 col-6 text-center">
                 <div className="menu-btn">
-                  <span className="hamburger">☰</span>
+                  <span className="hamburger" onClick={() => this.onSetSidebarOpen(true)}>☰</span>
                 </div>
               </div>
             </div>
             <div className="jumbotron">
               <h1>
                 <small>
-                  <SplitText
-                    initialPose="exit"
-                    pose="enter"
-                    charPoses={charPoses}
-                  >
                     In the hall of the
-                  </SplitText>
                 </small>
                 <br />
                 <strong>
@@ -60,6 +67,12 @@ class Header extends React.Component {
             </div>
           </div>
         </div>
+        <Sidebar
+        sidebar={<SidebarNav />}
+        open={this.state.sidebarOpen}
+        onSetOpen={this.onSetSidebarOpen}
+       sidebarId="sidebarID"
+      />
       </header>
     )
   }

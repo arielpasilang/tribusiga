@@ -30,7 +30,7 @@ const News = () => (
                 See Our Upcoming Major Climb <i className="fa fa-arrow-circle-o-right" />{" "}
               </Link>
             </div>
-            <div className="col-md-5" styles={{textAlign:"center"}}>
+            <div className="col-md-5" style={{textAlign:"center"}}>
                 <LazyLoad>
                   <img
                     src={G2}
