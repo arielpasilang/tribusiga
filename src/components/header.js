@@ -2,20 +2,20 @@ import { Link } from "gatsby"
 import React from "react"
 import Logo from "../images/your_logo.png"
 import SplitText from "react-pose-text"
-import Sidebar from 'react-sidebar'
-import SidebarNav from '../components/sidebar'
+import Sidebar from "react-sidebar"
+import SidebarNav from "../components/sidebar"
 
 class Header extends React.Component {
-    constructor(props) {
-    super(props);
+  constructor(props) {
+    super(props)
     this.state = {
-      sidebarOpen: false
-    };
-    this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
+      sidebarOpen: false,
+    }
+    this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this)
   }
- 
+
   onSetSidebarOpen(open) {
-    this.setState({ sidebarOpen: open });
+    this.setState({ sidebarOpen: open })
   }
   render() {
     const charPoses = {
@@ -39,15 +39,18 @@ class Header extends React.Component {
               </div>
               <div className="col-md-2 col-6 text-center">
                 <div className="menu-btn">
-                  <span className="hamburger" onClick={() => this.onSetSidebarOpen(true)}>☰</span>
+                  <span
+                    className="hamburger"
+                    onClick={() => this.onSetSidebarOpen(true)}
+                  >
+                    ☰
+                  </span>
                 </div>
               </div>
             </div>
             <div className="jumbotron">
               <h1>
-                <small>
-                    In the hall of the
-                </small>
+                <small>In the hall of the</small>
                 <br />
                 <strong>
                   <SplitText
@@ -60,7 +63,8 @@ class Header extends React.Component {
                 </strong>
               </h1>
               <p>
-                "In every mountain we climb, we create wonderful memories, meets awesome friends and a thousand stories to tell"
+                "In every mountain we climb, we create wonderful memories, meets
+                awesome friends and a thousand stories to tell"
                 <br />
                 Tribu Siga Mountaineers (Mt. Talinis April 12-15, 2017)
               </p>
@@ -68,11 +72,11 @@ class Header extends React.Component {
           </div>
         </div>
         <Sidebar
-        sidebar={<SidebarNav />}
-        open={this.state.sidebarOpen}
-        onSetOpen={this.onSetSidebarOpen}
-       sidebarId="sidebarID"
-      />
+          sidebar={<SidebarNav />}
+          open={this.state.sidebarOpen}
+          onSetOpen={this.onSetSidebarOpen}
+          sidebarId="sidebarID"
+        />
       </header>
     )
   }
