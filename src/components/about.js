@@ -31,16 +31,6 @@ const About = () => (
                   Kandungaw peak and Bocaue peak that are situated in Cebu
                   Province, our home.
                 </p>
-                <h3>Major Climbs:</h3>
-                <p>
-                  "In every mountain we climb, we create wonderful memories,
-                  meets awesome friends and tell a thousand stories to tell" -
-                  (Mt. Talinis, April 12-15, 2017)
-                </p>
-                <p>
-                  "Every step in the mountain brings happiness and contentment
-                  to your soul" (Mt. Mandalagan, September 1-3 2017)
-                </p>
               </div>
             </div>
           </div>
